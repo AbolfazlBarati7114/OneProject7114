@@ -1,0 +1,740 @@
+body {
+    background-color: #fff;
+}
+
+* {
+    font-family: "Roboto";
+}
+
+input:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+        width: 500px;
+        height: 75px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: transparent;
+        position: fixed;
+        z-index: 9;
+    }
+
+    .MainPage {
+        position: relative;
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        width: 483px;
+        height: 780px;
+        z-index: 2;
+        transition: all 1s;
+    }
+
+    .Team1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+
+    .DivBlur {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(2, 2, 8);
+        opacity: 0.7;
+        z-index: 4;
+    }
+
+    .MenuCss {
+        position: absolute;
+        color: #fff;
+        top: 27%;
+        left: 5%;
+        background-color: rgba(128, 128, 128, 0);
+        border-radius: 50%;
+        padding: 6px 6px;
+        transition: all 0.4s;
+    }
+
+    .MenuCss:hover {
+        background-color: gray;
+    }
+
+    .PersonCss:hover {
+        background-color: gray;
+    }
+
+    .PersonCss {
+        position: absolute;
+        color: #fff;
+        top: 25%;
+        left: 60%;
+        background-color: rgba(128, 128, 128, 0);
+        border-radius: 50%;
+        padding: 6px 6px;
+        transition: all 0.4s;
+    }
+
+    .TextStarted {
+        color: #fff;
+        font-size: 14px;
+        background-color: #2962ff;
+        display: inline;
+        padding: 13px 23px;
+        border-radius: 30px;
+        right: 0px;
+        position: absolute;
+        right: 7%;
+        top: 8%;
+    }
+
+    a {
+        color: #000;
+    }
+
+    .DivLookFirst {
+        position: relative;
+        position: absolute;
+        width: 400px;
+        height: 360px;
+        z-index: 5;
+        top: 49%;
+        left: 8.7%;
+        /* border-left: 1px solid red;
+        border-right: 1px solid red; */
+    }
+
+    .TextLook {
+        position: absolute;
+        color: #fff;
+        font-size: 46px;
+        font-weight: 800;
+        left: 22%;
+        top: 30px;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+
+    .TextLook2 {
+        position: absolute;
+        color: #fff;
+        font-size: 46px;
+        font-weight: 800;
+        left: 22%;
+        top: 80px;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+
+    .TextBestTrades {
+        position: absolute;
+        color: #fff;
+        left: 3.8%;
+        top: 57%;
+        /*38%*/
+        opacity: 0;
+        transition: all 0.6s;
+    }
+
+    .SearchMarketHere {
+        position: absolute;
+        width: 220px;
+        height: 55px;
+        border-radius: 50px;
+        top: 40%;
+        /*46%*/
+        border: 1px solid transparent;
+        left: 5%;
+        font-size: 16px;
+        padding: 0px 70px;
+        transition: all 0.6s;
+        opacity: 0;
+    }
+
+    .IconSearchCss {
+        position: absolute;
+        color: #fff;
+        background-color: #2962ff;
+        padding: 7px;
+        border-radius: 50%;
+        top: 42.8%;
+        left: 8%;
+        transition: all 0.6s;
+        opacity: 0;
+    }
+
+    .BoxBTC {
+        position: absolute;
+        position: relative;
+        width: 160px;
+        height: 57px;
+        top: 50%;
+        /*80%*/
+        left: 10%;
+        background-color: #16181e6c;
+        border-radius: 30px;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+
+    .BoxAppel {
+        position: absolute;
+        position: relative;
+        width: 160px;
+        height: 57px;
+        top: 20%;
+        left: 54%;
+        background-color: #16181e6c;
+        border-radius: 30px;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+
+    .PicBTC {
+        position: absolute;
+        width: 43px;
+        top: 8px;
+        left: 15px;
+    }
+
+    .TextBTC {
+        color: #fff;
+        position: absolute;
+        left: 41%;
+        top: -5px;
+    }
+
+    .number {
+        position: absolute;
+        color: #fff;
+        left: 44%;
+        top: 34%;
+        font-size: 14px;
+        color: red;
+    }
+
+    .DivTyped {
+        position: relative;
+        position: absolute;
+        width: 480px;
+        height: 100px;
+        z-index: 5;
+        top: 29%;
+        left: 0%;
+    }
+
+    .typed {
+        position: absolute;
+        font-size: 30px;
+        color: #fff;
+        font-size: 54px;
+        left: 8.8%;
+    }
+
+    .DivWorldMarkets {
+        position: relative;
+        position: absolute;
+        width: 483px;
+        height: 780px;
+        background-color: rgb(0, 0, 0);
+        z-index: -2;
+        top: 770px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .TextWorldMarkets {
+        position: absolute;
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        left: 11%;
+        top: 4%;
+    }
+
+    .TextJoinTraders {
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        line-height: 26px;
+        top: 23%;
+        left: 12%;
+    }
+
+    .TextExploreFeatures {
+        position: absolute;
+        color: #fff;
+        background-color: #366afaea;
+        top: 33%;
+        left: 30%;
+        padding: 21px 40px;
+        border-radius: 50px;
+    }
+
+    .MainMarket {
+        position: relative;
+        position: absolute;
+        width: 483px;
+        height: 780px;
+        background-color: rgb(255, 255, 255);
+        z-index: -2;
+        left: 0px;
+        top: 1550px;
+    }
+
+    .BackGroundColorFFF {
+        background-color: red;
+    }
+
+    .IconSearchHeaderCSS {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transition: all 0.6s;
+        opacity: 0;
+        font-size: 28px;
+        background-color: rgba(128, 128, 128, 0);
+    }
+
+    .BoxMenu {
+        position: absolute;
+        position: relative;
+        background-color: #fff;
+        z-index: 34;
+        width: 320px;
+        height: 33%;
+        top: 9.9%;
+        left: 4.2%;
+        border-radius: 4px;
+        position: fixed;
+        display: none;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        /*none*/
+    }
+
+    .DivBoxMenu1 {
+        position: relative;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        background-color: rgb(255, 255, 255);
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        transition: all 0.4s;
+
+    }
+
+    .DivBoxMenu2 {
+        position: relative;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        background-color: rgb(255, 255, 255);
+        top: 20%;
+        transition: all 0.4s;
+    }
+
+    .DivBoxMenu3 {
+        position: relative;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        background-color: rgb(255, 255, 255);
+        top: 40%;
+        transition: all 0.4s;
+    }
+
+    .DivBoxMenu4 {
+        position: relative;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        background-color: rgb(255, 255, 255);
+        top: 60%;
+        transition: all 0.4s;
+    }
+
+    .DivBoxMenu5 {
+        position: relative;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        background-color: rgb(255, 255, 255);
+        top: 80%;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        transition: all 0.4s;
+    }
+
+    .IconRight1 {
+        position: absolute;
+        font-size: 26px;
+        right: 0%;
+        right: 4%;
+        top: 23%;
+    }
+
+    .IconChart,
+    .IconShape,
+    .IconWorld,
+    .IconNews,
+    .IconGroups {
+        position: absolute;
+        left: 4%;
+        top: 26%;
+        font-weight: 500;
+    }
+
+    .IconGroups {
+        font-size: 25px;
+    }
+
+    .IconChart {
+        font-size: 25px;
+    }
+
+    .TextProducts,
+    .TextCommunity,
+    .TextMarkets,
+    .TextNews,
+    .TextGroups {
+        position: absolute;
+        font-weight: 600;
+        left: 15%;
+        top: 2.4%;
+    }
+
+    .TextCommunity {
+        top: 0%;
+    }
+
+    .TextMarkets,
+    .TextNews {
+        top: -2%;
+    }
+
+    .DivBoxMenu1:hover {
+        background-color: rgba(128, 128, 128, 0.226);
+        transition: all 0.4s;
+    }
+
+    .DivBoxMenu2:hover {
+        background-color: rgba(128, 128, 128, 0.226);
+        transition: all 0.4s;
+    }
+
+    .DivBoxMenu3:hover {
+        background-color: rgba(128, 128, 128, 0.226);
+        transition: all 0.4s;
+    }
+
+    .DivBoxMenu4:hover {
+        background-color: rgba(128, 128, 128, 0.226);
+        transition: all 0.4s;
+    }
+
+    .DivBoxMenu5:hover {
+        background-color: rgba(128, 128, 128, 0.226);
+        transition: all 0.4s;
+    }
+
+    .DivMarketSummary {
+        position: relative;
+        position: absolute;
+        width: 100%;
+        height: 45%;
+        border-bottom: 1px solid red;
+        overflow: hidden;
+    }
+
+    .DivIndices {
+        position: relative;
+        position: absolute;
+        width: 200%;
+        height: 50%;
+        bottom: 0px;
+        left: 0%;
+        transition: all 0.5s;
+    }
+
+    .TextMarketSummary {
+        position: absolute;
+        font-size: 23px;
+        font-weight: 600;
+        top: 12%;
+        left: 5%;
+        transition: all 0.3s;
+    }
+
+    .TextMarketSummary:hover {
+        color: #2962ff;
+        transition: all 0.3s;
+    }
+
+    .TextIndices {
+        position: absolute;
+        font-size: 15.8px;
+        font-weight: 600;
+        top: 32%;
+        left: 11%;
+    }
+
+    .TextStocks {
+        position: absolute;
+        font-size: 15.8px;
+        top: 32%;
+        left: 30%;
+    }
+
+    .TextCrypto {
+        position: absolute;
+        font-size: 15.8px;
+        top: 32%;
+        left: 48%;
+    }
+
+    .TextForex {
+        position: absolute;
+        font-size: 15.8px;
+        top: 32%;
+        left: 67%;
+    }
+
+    .TextFutures {
+        position: absolute;
+        font-size: 15.8px;
+        top: 32%;
+        right: 4%;
+    }
+
+    .IconRightTextMarket {
+        position: absolute;
+        font-size: 23px;
+        font-weight: 600;
+        top: 15%;
+    }
+
+    .OneDivIndices {
+        position: relative;
+        position: absolute;
+        width: 15.5%;
+        height: 86%;
+        border: 1px solid rgba(128, 128, 128, 0.404);
+        border-radius: 9px;
+        top: 7%;
+        left: 3%;
+        transition: all 1s;
+        z-index: 4;
+    }
+
+    .TwoDivIndices {
+        position: relative;
+        position: absolute;
+        width: 15.5%;
+        height: 86%;
+        border: 1px solid rgba(128, 128, 128, 0.404);
+        border-radius: 9px;
+        top: 7%;
+        transition: all 1s;
+        left: 20%;
+        z-index: 4;
+    }
+
+    .ThreeDivIndices {
+        position: relative;
+        position: absolute;
+        width: 17%;
+        transition: all 1s;
+        height: 86%;
+        border: 1px solid rgba(128, 128, 128, 0.404);
+        border-radius: 9px;
+        top: 7%;
+        left: 37.1%;
+        z-index: 4;
+    }
+
+    .FoorDivIndices {
+        position: relative;
+        position: absolute;
+        width: 17%;
+        height: 86%;
+        border: 1px solid rgba(128, 128, 128, 0.404);
+        border-radius: 9px;
+        transition: all 1s;
+        top: 7%;
+        left: 55.4%;
+        z-index: 4;
+    }
+
+    .FiveDivIndices {
+        position: relative;
+        position: absolute;
+        width: 17%;
+        height: 86%;
+        transition: all 1s;
+        border: 1px solid rgba(128, 128, 128, 0.404);
+        border-radius: 9px;
+        top: 7%;
+        left: 73.7%;
+        z-index: 4;
+    }
+
+    .RightDivs {
+        position: absolute;
+        z-index: 5;
+        background-color: #ffffff;
+        padding: 8px;
+        border-radius: 50%;
+        font-size: 25px;
+        left: 89%;
+        transition: all 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        top: 70%;
+    }
+
+    .LeftDivs {
+        position: absolute;
+        z-index: 5;
+        background-color: #ffffff;
+        padding: 8px;
+        border-radius: 50%;
+        font-size: 25px;
+        left: 94%;
+        transition: all 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        top: 39%;
+    }
+
+    .DivEditorsPicks {
+        position: relative;
+        position: absolute;
+        width: 100%;
+        height: 45%;
+        border-bottom: 1px solid red;
+        top: 45%;
+    }
+
+    .DivStreams {
+        position: relative;
+        position: absolute;
+        width: 100%;
+        height: 45%;
+        border-bottom: 1px solid red;
+        top: 90%;
+    }
+
+    .OnePiccherDivIndices {
+        position: absolute;
+        width: 38px;
+        border-radius: 50%;
+        left: 8%;
+        top: 6%;
+    }
+
+    .OnePicherTwoDivIndices {
+        position: absolute;
+        width: 38px;
+        border-radius: 50%;
+        left: 8%;
+        top: 6%;
+    }
+
+    .OnePicherThreeDivIndices{
+        position: absolute;
+        width: 38px;
+        border-radius: 50%;
+        left: 8%;
+        top: 9%;
+    }
+
+    .oneTextDiv1Indeces{
+        position: absolute;
+        font-weight: 600;
+        font-size: 15px;
+        left: 36%;
+        top: 3.9%;
+    }
+
+    .oneTextDiv2Indeces{
+        position: absolute;
+        font-weight: 600;
+        font-size: 15px;
+        left: 36%;
+        top: 3.6%;
+    }
+
+    .oneTextDiv3Indeces{
+        position: absolute;
+        font-weight: 600;
+        font-size: 15px;
+        left: 36%;
+        top: 3.6%;
+    }
+
+    .oneTextDiv4Indeces{
+        position: absolute;
+        font-weight: 600;
+        font-size: 15px;
+        left: 36%;
+        top: 5.5%;
+    }
+
+    .oneTextDiv5Indeces{
+        position: absolute;
+        font-weight: 600;
+        font-size: 15px;
+        left: 36%;
+        top: 5.5%;
+    }
+
+    .OneChartDiv1Indices{
+        position: absolute;
+        width: 134px;
+        z-index: -2;
+        top: 56%;
+        left: 4.6%;
+    }
+
+    .DivGreen1{
+        position: absolute;
+        background-color: #56af6e;
+        border-radius: 50%;
+        width: 5%;
+        height: 5%;
+        top: 68.3%;
+        right: 0px;
+        right: 3%;
+    }
+
+    .statistics1{
+        position: absolute;
+        font-size: 13px;
+        font-weight: 600;
+        top: 28%;
+        left: 13%
+    }
+
+    .TextUSD{
+        font-weight: 300;
+        color: rgba(121, 121, 121, 0.932);
+        font-size: 10px;
+    }
+
+    .GrowPercentage1{
+        position: absolute;
+        top: 43%;
+        font-weight: 600;
+        font-size: 14px;
+        color: #56af6e;
+        left: 7%;
+    }
+
+    .TextToday{
+        font-size: 10px;
+        font-weight: 400;
+    }
+}
